@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Strange Scientists</title>
+<head>
+<body>
+<body style="background-color:sand;">
+<h1><strong>Strange Scientists</strong></h1>
+<div style="text-align:center"> 
+  <button onclick="playPause()">Play/Pause</button> 
+  <button onclick="makeBig()">Big</button>
+  <button onclick="makeNormal()">Normal</button><br><br>
+
+<embed src="3Dmodel.mp4" height = "450" width="580" autostart="true"></embed>
+</div> 
+
+<script> 
+var myVideo = document.getElementById("video1"); 
+
+function playPause() { 
+  if (myVideo.paused) 
+    myVideo.play(); 
+  else 
+    myVideo.pause(); 
+} 
+
+function makeBig() { 
+    myVideo.width = 590; 
+} 
+
+function makeNormal() { 
+    myVideo.width = 480; 	
+} 
+</script> 
+<h2 style="font-family:courier;">Space_robot Image</h2><br>
+<img src="robotlabeling.jpg" width="530" height="345"><br><br>
+
+<p style= "font-size: 2vw;"><strong>Note:The Main purpose of the space robot is to detect the element which are in land(surface) of the planets.</strong></p>
+</body>
+</html>
